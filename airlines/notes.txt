@@ -1,0 +1,10 @@
+runme.m has several different options to run the multimodal alignment on the airlines dataset
+the default run is set to 1/k weight with Bipartite Matching to resolve the matching
+the user can pick which method to run
+
+All multimodal alignment methods run in a few minutes so the user can create a for loop to run all methods
+
+For the pairwise alignment (which takes much longer - order of hours), there are 3 methods that the user can pick from
+option 1: bp - Solve the network alignment problem with Belief Propagation
+option 2: mr - Compute the matching relaxation heuristic for network alignment
+option 3: iso - Solve an overlap matching problem with IsoRank

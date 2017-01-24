@@ -1,0 +1,13 @@
+notes:
+run the script `runme.m`
+
+To regenerate the data, you will need to rerun one or more of these three files:
+(1) recovery_plot_pairwise
+(2) recovery_plot_multimodal
+(3) recovery_plot_pairwise_iso
+
+More details can be found in final_plots.m (from which the following three lines have been taken)
+
+mr = load('pairwise_recovery_mr'); %output form recovery_plot_pairwise
+msd = load('multimodal_recovery'); %output from recovery_plot_multimodal
+iso = load('pairwise_recovery_iso'); %output from recovery_plot_pairwise_iso

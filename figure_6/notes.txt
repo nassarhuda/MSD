@@ -1,0 +1,32 @@
+% densityorder2.mat, edgeorder2.mat, vertexorder2.mat, avgdeg2.mat,
+% ntris2.mat are the result from script_levscores.m
+
+% If you want to rerun the entire experiment without the pre-saved .mat
+% files do the following:
+% remove all the .mat files
+
+% addpath(genpath('../netalign/'))
+% addpath('../setup/')
+% script_levscores
+
+% uncomment the below code:
+
+% evaluate_mode_by_mode('densityorder2.mat','density_experiment_result2.mat');
+% evaluate_mode_by_mode('edgeorder2.mat','edge_experiment_result2.mat');
+% evaluate_mode_by_mode('vertexorder2.mat','vertex_experiment_result2.mat');
+% evaluate_mode_by_mode('avgdeg2.mat','avgdeg_experiment_result2.mat');
+% evaluate_mode_by_mode('ntris2.mat','ntris_experiment_result2.mat');
+% id = randperm(175);
+% save randomperm1.mat id
+% evaluate_mode_by_mode('randomperm1.mat','randomperm_experiment_result1.mat');
+% id = randperm(175);
+% save randomperm2.mat id
+% evaluate_mode_by_mode('randomperm2.mat','randomperm_experiment_result2.mat');
+% id = randperm(175);
+% save randomperm3.mat id
+% evaluate_mode_by_mode('randomperm3.mat','randomperm_experiment_result3.mat');
+
+% now all the previously generated .mat files are re-generated (this will
+% take a while since the multimodal alignment is being solved 8*36 times)
+
+% then, you can just run 'runme.m'
